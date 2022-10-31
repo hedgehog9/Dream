@@ -1,0 +1,381 @@
+@charset "UTF-8"; /* 진행중, 종료 태그 가운데 정렬 */
+
+:checked {
+    accent-color: black;
+}
+
+
+div#status_button {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+/* 배송관리 title css */
+div#content_title{
+	width : 100%;
+	text-align:center;
+}
+
+div.div_allcheck{
+	display: flex;
+	margin:auto;
+}
+div.div_allcheck > button.btn_shipping{
+	height : 25px;
+}
+div.div_allcheck > label{
+	margin-bottom:0;
+}
+
+div#allCheckAndButtons{
+	display: flex;
+	justify-content: end;
+/* 	border: solid 2px red;*/
+}
+
+label.textMiddle
+,div.order_num
+,div.purchase_cnt 
+,div.totalPrice 	
+,div.totalPoint
+{
+	line-height: 118px;
+}
+
+/* 배송관리 title css */
+div#sihpping_title{
+	display:flex;
+}
+
+/* 전체선택(배송하기), 전체선택(배송완료) */
+button.btn_shipping{
+	display: block;
+	width : 62px;
+	border: solid 1px #ebebebeb;
+	font-size: 12px;
+	background-color: black;
+	color: white;
+}
+
+div#allCheckAndButtons > label{
+	margin-right: 10px;
+}
+
+
+/* 버튼은 px로 고정 */
+div#date_button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+div#date_button>button {
+	font-size: 10pt;
+}
+
+input#allCheckEnd{
+	margin-left:10px;
+}
+
+.square {
+	width: 50%;
+}
+
+.square:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* 사이드바, 구매내역 내용물 배치 */
+div#purchase_list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+}
+
+div#purchase {
+	width: 80%;
+}
+
+div#result_buttons {
+	/* 전체버튼 활성화시 배치 */
+	display: flex;
+	justify-content: flex-end;
+	padding: 0 3px;
+}
+
+div.purchase_item {
+	display: flex;
+	justify-content: start;
+	height: 120px;
+}
+
+/* 진행중, 종료 css */
+
+/* 진행중, 종료 "개수" 글자 속성(크기,두께..) */
+div.purchase_count {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+/* 진행중, 종료 글자 속성 */
+div.shipping_status {
+	font-size: 13px;
+	letter-spacing: -0.07px;
+	color: rgba(34, 34, 34, .5);
+}
+
+/* 전체 버튼 css */
+button#total {
+	display: flex;
+	background-color: white;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: center;
+	text-align: center;
+	width: 120px;
+	height: 36px;
+	font-size: 13px;
+	border: solid 1px #ebebeb;
+	border-radius: 10px;
+}
+
+button.result_detail {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: 120px;
+	height: 36px;
+	font-size: 13px;
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+}
+/* 구매일, 상태 버튼 정렬 */
+div#sort {
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+}
+
+div#date_status {
+	display: flex;
+	justify-content: start;
+	width: 40%;
+}
+
+div#date_status>div {
+	width: 120px;
+	text-align: center;
+	margin: auto 0;
+}
+
+div#name_cnt {
+	margin: auto 0;
+}
+
+/* 2개월 4개월 6개월 버튼 css */
+button.btn_month {
+	border: solid 1px #ebebeb;
+	font-size: 13px;
+	line-height: 30px;
+	height: 32px;
+	min-width: 62px;
+	padding: 0 12px 0 12px;
+	margin-right: 10px;
+	background-color: white;
+}
+/* 조회 버튼 css */
+button#search_simple, button#search_date {
+	border: solid 1px #ebebeb;
+	background-color: #222222;
+	color: white;
+	font-size: 13px;
+	line-height: 30px;
+	height: 32px;
+	min-width: 62px;
+	padding: 0 12px 0 12px;
+	margin-left: 10px;
+}
+/* datepicker css 테두리,높이,글자크기 */
+div.input_date>input {
+	border: solid 1px #ebebeb;
+	height: 32px;
+	font-size: 13px;
+}
+
+div.shipping_cnt {
+	width: 50%;
+	text-align: center;
+	border-bottom: solid 1px #d3d3d3;
+	margin-bottom: 16px;
+}
+
+img.product_img {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+/* 조회결과 문구 css */
+li.result_notice {
+	margin-left: 15px;
+	font-size: 12px;
+	letter-spacing: -0.06px;
+	color: #22222280;
+}
+/* 기간조회 버튼 숨기기 */
+button#search_date {
+	display: none;
+}
+
+/* 기간조회 select 태그 */
+select#select_month {
+	height: 40px;
+	border: solid 1px #d3d3d3;
+	display: none;
+}
+
+/* 구매내역 조회 더보기 버튼  */
+button#btnMoreHIT {
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	color: white;
+	background-color: #c2c2c2;
+	font-weight: 600;
+	font-size: 15px;
+	border: none;
+	margin: 20px auto 0px auto;
+	display: block;
+}
+
+/* 반복문으로 생성되는 구매내역 정보 css */
+span#shipping_pname, .item_name{
+	width: 150px;
+}
+span#shipping_onum , .order_num{
+	width: 100px;
+}
+span#shipping_ocnt {
+	width: 80px;
+}
+.purchase_cnt{
+	width: 80px;
+}
+span#shipping_tprice, .totalPrice{
+	width : 100px;
+}
+span#hipping_tpoint, .totalPoint{
+	width: 100px;
+}
+span#shipping_shipping{
+	width: 120px;
+	position: relative;
+    left: 70px;	
+}
+
+.div_shipping_status{
+	width: 120px;
+}
+
+span#shipping_odate{
+    margin-left: 250px;
+}
+
+
+
+
+
+
+a.purchaseDetail {
+	color: #222222;
+	background-color: transparent;
+	text-decoration: none;
+}
+a.purchaseDetail:link {
+	color: #222222;
+	background-color: transparent;
+	text-decoration: none;
+} /*방문 전 링크 상태 */
+a.purchaseDetail:visited {
+	color: #222222;
+	background-color: transparent;
+	text-decoration: none;
+} /* 방문 후 링크 상태 */
+a.purchaseDetail:hover {
+	color: #222222;
+	background-color: transparent;
+	text-decoration: none;
+} /* 마우스 오버했을 때 링크 상태 */
+a.purchaseDetail:active {
+	color: #222222;
+	background-color: transparent;
+	text-decoration: none;
+} /* 클릭했을 때 링크 상태 */
+
+
+
+
+
+@media screen and (max-width: 958px) {
+	/* 기간 입력 input 태그 숨기기 */
+	div.input_date {
+		display: none;
+	}
+	button.btn_month {
+		border-radius: 6px;
+	}
+	/* 조회 버튼 숨기기 */
+	button#search_simple {
+		border-radius: 6px;
+		display: none;
+	}
+	/* 기간 조회 버튼 보이기 */
+	button#search_date {
+		border-radius: 6px;
+		display: inline;
+	}
+	select#select_month {
+		display: block;
+	}
+	div#date_button>button {
+		width: 23%;
+		margin: 10px auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	div#purchase {
+		width: 100%;
+	}
+	div#purchase_item {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	div#purchase {
+		width: 100%;
+	}
+	div#purchase_item {
+		width: 100%;
+	}
+	div#date_button>button {
+		width: 23%;
+		margin: 10px auto;
+		font-size: 13px;
+		padding: 0;
+	}
+	select#select_month {
+		display: block;
+	}
+	div.item_name, div.purchase_cnt, div.purchase_status, div.purchase_date,
+		span.purchase_status, span.purchase_date {
+		font-size: 12px;
+		font-weight: bold;
+	}
+}

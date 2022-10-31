@@ -1,0 +1,673 @@
+@charset "UTF-8";
+body, button, input, select, table, textarea {
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,AppleSDGothicNeo-Regular,NanumBarunGothic,NanumGothic,나눔고딕,Segoe UI,Helveica,Arial,Malgun Gothic,Dotum,sans-serif;
+    color: #222;
+}
+
+@font-face {
+
+    src : url("BMJUA_ttf.ttf"); /*파일 연결 (..은 현재 위치가 css 폴더이기에 상위로 폴더로 가기 위함) */
+
+   font-family: "baemean" /*위에 파일로 된 폰트는 이름을 jua라고 지정 */
+
+}
+
+
+h1 {   /* html 파일의 h1을 꾸며준다.*/
+
+font-family: "baemean";
+
+}
+
+body, button, dd, div, dl, dt, fieldset, figcaption, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+input{
+    border:none;
+}
+
+.content_area a {
+    color: #222;
+	
+    text-decoration: none;
+    background-color: transparent;
+    display: flex;
+
+}
+
+
+#leftside{
+    display: flex;
+    float: left;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 40px 160px;
+    max-width: 1280px;
+}
+.content_area{
+    overflow: hidden;
+    min-height: 380px;
+    margin-top:21px;
+    
+}
+
+.content_title{
+    display: flex;
+    padding: 0 0 6px;
+}
+
+.point>.dashboard{
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+}
+
+
+
+.title {
+    font-size: 24px;
+    letter-spacing: -.36px;
+}
+
+.title>h3 {
+    line-height: 29px;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.btn_help{
+    cursor: pointer;
+    margin-left: 4px;
+    color:#222;
+    
+}
+
+button {
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+    background-color: rgba(0,0,0,0);    
+    appearance: none;
+    border-radius: 0;
+    vertical-align: middle;
+}
+
+.fa-circle-question>{
+    
+    width: 18px;
+    height: 18px;
+    padding: 2px 2px 2px 2px;
+    
+    
+}
+.i_box{
+    width: 20px;
+    height: 20px;
+    justify-content: center;    
+}
+
+.i_box>a>i{
+    padding-top: 2px;
+}
+
+/* 아이콘은 왜이러는지 몰루 살려줘 */
+
+.point>.dashboard>.point_summary{
+    flex: 1;
+    max-width: 420px;
+    display: flex;
+}
+
+.dashboard>.point_summary>.point_info>.title{
+    color: rgba(34,34,34,.5);
+    font-size: 13px;
+    word-break: keep-all;
+    letter-spacing: -.07px;
+}
+/* 포인트 */
+.dashboard>.point_summary>.point_info>.point {
+    font-size: 24px;
+    letter-spacing: -.36px;
+}
+
+.dashboard>.point_summary>.divider{
+
+    flex: 1;
+    height: 44px;
+}
+
+.dashboard>.point_summary>.divider>.divider_line{
+    margin: auto;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(34,34,34,.1);
+}
+
+
+.dashboard>.point_summary, .dashboard,
+.dashboard>.point_summary,
+.dashboard {
+
+    display: flex;
+    align-items: center;
+}
+
+
+.point>.dashboard>.register{
+    padding-left: 25px;
+}
+
+
+button.solid {
+    font-weight: 600;
+    color: #fff;
+    background-color: #222;
+}
+
+.medium {
+    padding: 0 18px;
+    height: 42px;
+    line-height: 40px;
+    border-radius: 12px;
+    font-size: 14px;
+    letter-spacing: -.14px;
+}
+
+.point>.description{
+    font-size: 12px;
+    letter-spacing: -.06px;
+    color: rgba(34,34,34,.5);
+    margin-top: 12px;
+}
+
+.point>.point_history_table{
+    margin-top: 40px;
+    border-top: 2px solid #222;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+.point>.point_history_table .point_history_header:first-of-type{
+    text-align: center;
+    width: 80%;
+}
+.point>.point_history_table .point_history_header:nth-of-type(2){
+    text-align: right;
+}
+.point>.point_history_table .point_history_header{
+    font-size: 13px;
+    letter-spacing: -.07px;
+    padding: 15px 0;
+    font-weight: 400;
+}
+
+.point_history_table>thead{
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.point_empty {
+    padding-top: 150px;
+}
+
+/* 포인트 존재시 화면 */
+
+
+.point_obj{
+    display: flex;
+    padding:5px 0px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    justify-content: space-between;
+}
+
+.point_empty>.text {
+    text-align: center;
+    color: rgba(34,34,34,.5);
+    font-size: 14px;
+    letter-spacing: -.21px;
+}
+.point_circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    overflow:hidden;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.point_obj.plus>.point_circle{
+    background-color: #222;
+    color: #ebebeb;
+}
+.point_obj.minus>.point_circle{
+    background-color: #fff;
+    border:solid 1px red;
+    color: red;
+}
+
+.point_date,.point_change_explain {
+
+    display: flex;
+    align-items:center;
+    width: 10vw;
+    
+}
+.point_amount {
+	width:10%;
+
+    display: flex;
+    align-items:center;
+    
+}
+/* .point_obj.plus>.point_amount{
+    color: #222;
+} */
+
+.point_obj.minus>.point_amount{
+    color: red;
+}
+
+
+.point_date{
+    font-size: 12px;
+    letter-spacing: -.06px;
+    color: rgba(34,34,34,.5);
+}
+
+
+
+
+.point_circle>div{
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    line-height: 58px;
+    vertical-align: middle;
+    font-weight: 550;
+}
+.point_text{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.point_date,.point_change_explain{
+    font-size: 12px;
+}
+
+
+
+
+.point>.dashboard_2>button{
+    font-weight: 400;
+    border: 1px solid #d3d3d3;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: -.16px;
+    font-weight: 700;
+    height: 100%;
+    line-height: 50px;
+    border-radius: 12px;
+    display: flex;
+}
+
+.point>.dashboard_2>.point_info{
+    display: block;
+    padding: 20px 0;
+}
+
+.point>.dashboard_2>.point_info>.available_point_title{
+    font-size: 13px;
+    letter-spacing: -.07px;
+    color: rgba(34,34,34,.8);
+}
+
+.point>.dashboard_2>.point_info>.available_point {
+    font-size: 22px;
+    margin-top: 4px;
+}
+
+.point>.dashboard_2>.point_info>.expired_point{
+    font-size: 13px;
+    letter-spacing: -.07px;
+    margin-top: 16px;
+}
+
+.point_header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+
+.point_header>.inner{
+    position: relative;
+    padding: 0 50px;
+    min-width: 320px;
+    height: 60px;
+}
+
+a.btn_cancel{
+    position: absolute;
+    top: 18px;
+    left: 22px;
+    height: 24px;
+}
+
+a.btn_cancel>.fa-arrow-left{
+    width: 24px;
+    height: 24px;
+    color: #222;
+}
+.inner>h1.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.inner>a.btn_help{
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    color:#222;
+}
+
+/* 모달 css */
+
+.modal-header {
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    border-bottom: none;
+}
+.modal-body{
+    padding: 0;
+}
+
+
+.modal-title {
+    width: 100%;
+    line-height: 22px;
+    padding: 18px 50px 20px;
+    min-height: 60px;
+    font-size: 18px;
+    letter-spacing: -.27px;
+    font-weight: 700;
+    letter-spacing: -.15px;
+    color: #000;
+    text-align: center;
+    
+}
+
+.modal-content {
+    position: relative;
+
+    display: flex;
+    border-bottom: none;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 16px;
+    outline: 0;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.description_list{
+    padding: 20px 32px 30px;
+}
+
+.description {
+    font-size: 12px;
+    letter-spacing: -.06px;
+    color: rgba(34,34,34,.8);
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+
+li, ol, ul {
+    list-style: none;
+}
+
+button#x {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 24px 32px 32px;
+
+    display: flex;
+
+    justify-content: center;
+}
+.modal-footer>button{
+    width:120px;
+}
+
+.outlinegrey{
+    border: 1px solid #d3d3d3;
+    color: rgba(34,34,34,.8);
+}
+
+
+/* 포인트 적립 modal css */
+.input_box{
+    position: relative;
+    padding: 10px 0 14px;
+}
+.input_title {
+    font-size: 13px;
+    letter-spacing: -.07px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.input_txt{
+    padding: 8px 0;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: -.15px;
+    line-height: 22px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.register_point{
+    padding: 4px 32px 36px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 화면 줄었을때 나오는 ? 이미지 누를 때 나오는 layer csss */
+.layer{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(34,34,34,.5);
+    z-index: 1010;
+}
+
+.layer>.layer_container{
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.layer_header .title {
+    line-height: 22px;
+    padding: 18px 50px 20px;
+    min-height: 60px;
+    font-size: 18px;
+    letter-spacing: -.27px;
+    font-weight: 700;
+    letter-spacing: -.15px;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+}
+.layer_content>.description_list{
+    padding: 10px 20px 20px;
+}
+
+.btn_layer_close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+}
+.register_point>.description {
+    font-size: 12px;
+    letter-spacing: -.06px;
+    color: rgba(34,34,34,.5);
+    line-height: 18px;
+}
+
+.layer_btn{
+    padding: 24px 32px 32px;
+    display: flex;
+    justify-content: center;
+}
+.layer_btn .btn+.btn {
+    margin-left: 8px;
+}
+
+.layer_btn .btn{
+    width: 120px;
+}
+
+.solid.disabled{
+    background-color: #ebebeb;
+    color: #fff;
+    cursor: default;
+}
+
+
+
+
+
+
+/* 반응형 시작(제일 아래로!!!!!!!!!!!!!!!!!!!!) */
+
+@media (max-width: 768px) {
+    .sidebar {
+    display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .point_date,.point_change_explain,.point_minus {
+    display: flex;
+    line-height: 100%;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .point_date, .point_change_explain {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .point_date,.point_change_explain{
+        font-size: 8px;
+        
+    }
+    .point_text {
+        display: grid;
+        width: 60%;
+    }
+
+    .point_obj {
+        display: flex;
+        padding: 5px 0px;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        justify-content: space-between;
+    }
+    .dashboard{
+        display: none;
+    }
+
+    .dashboard_2{
+        display: block;
+    }
+    
+    .container{
+        margin: 0 auto;
+        padding: 60px 16px 0px;
+        max-width: 1280px;
+    }
+    .point_header {
+        display: block;
+    }
+
+    .content_title {
+        display: none;
+    }
+
+    
+}
+
+
+@media (min-width: 768px) {
+    .dashboard_2{
+        display: none;
+    }
+    .dashboard{
+        display: flex;
+    }
+
+    .container{
+        margin: 0 auto;
+        padding: 0 40px 160px;
+        max-width: 1280px;
+    }
+    .content_title {
+        display: flex;
+    }
+}
+

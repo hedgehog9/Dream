@@ -1,0 +1,32 @@
+
+div.sidebar{
+  width: 180px;
+}
+/* 사이드바 클릭 전 글자색상 */
+div.category-section > ul > li{
+   color: #22222280;
+}
+/* 사이드바 a태그에 대한 css 시작 */
+a.color_gray:link {
+   color : #22222280;
+   text-decoration: none;
+}
+a.color_gray:visited {
+   color : #22222280;
+   text-decoration: none;
+}
+a.color_gray:hover {
+   color : #22222280;
+   text-decoration: none;
+}
+a.color_gray:active {
+   color : #22222280;
+   text-decoration: none;
+}
+/* 사이드바 a태그에 대한 css 끝 */
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

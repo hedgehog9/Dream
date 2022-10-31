@@ -1,0 +1,61 @@
+
+
+div.Main{
+  width:80%;
+  overflow: hidden;
+  max-width: 1280px;
+  margin:auto;
+}
+
+div.sidebar{
+  width: 300px;
+}
+div#notice{
+  width:1000px;
+}
+
+
+
+table.table > tbody > tr > td{
+  font-size:small;
+}
+div#notice > table > thead > tr > th{
+  border-top:0;
+  border-bottom:solid 3px black;
+}
+
+
+.my.pagination > .active > a, 
+.my.pagination > .active > span, 
+.my.pagination > .active > a:hover, 
+.my.pagination > .active > span:hover, 
+.my.pagination > .active > a:focus, 
+.my.pagination > .active > span:focus {
+  z-index:0;
+  background: black;
+  border-color:black;
+  color: white;
+}
+
+
+button#btn_notice_write:hover{
+	background-color:black;
+	color:white;
+}
+
+/* 0px ~ 768px 미디어 쿼리*/
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  div.Main{
+    width:90%;
+  }
+  button#btn_notice_write{
+  	font-size:small;
+  }
+  
+
+}
+
+

@@ -1,0 +1,139 @@
+select {width: 200px; padding: .8em .5em; border: 1px solid #999;font-family: inherit;  background: url('arrow.jpg') no-repeat 95% 50%; border-radius: 0px; -webkit-appearance: none; -moz-appearance: none;appearance: none;}
+select::-ms-expand {display: none;}
+
+:checked {
+    accent-color: black;
+}
+
+.image_box {
+    width:62px;
+    height:75px;
+    overflow:hidden;
+    margin: auto;
+    
+}
+
+img.product_img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.table, .card {
+    font-size: 10pt;
+}
+
+th {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+   .sidebar {
+      display: none;
+   }
+   #footer {
+   	  display: none;
+   }
+}
+
+@media (max-width: 991px) {
+   
+   div.table_div {
+   		display: none;
+   }
+   
+    #cart_footer {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+   .mobile_cart {
+      display: none;
+   }
+}
+
+@media (min-width: 1200px) {
+   #myPageFooter {
+      display: none;
+   }
+
+}
+
+section{
+  padding: 32px;
+  background-color: #fff;
+
+}
+
+.section_title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+section .section_title .title_txt{
+  line-height: 22px;
+  font-size: 18px;
+  letter-spacing: -.27px;
+  font-weight: 700;
+  letter-spacing: -.15px;
+}
+
+.section_input .btn_use_credit.disabled {
+  background: rgba(34,34,34,.2);
+
+}
+
+.section_input .btn_use_credit.disabled {
+  background: rgba(34,34,34,.2);
+}
+
+.info_point .text_current {
+  line-height: 17px;
+  color: rgba(34,34,34,.5);
+}
+
+.info_point .btn_question{
+  margin-left: 2px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.info_point .btn_question.i {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 2px;
+}
+
+.section_input .input_credit {
+    font-size: 14px;
+    line-height: 100%;
+    padding: 17px 12px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    margin-right: 8px;
+    width: calc(100% - 76px);
+}
+
+.section_input .btn_use_credit {
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 12px;
+    letter-spacing: -.06px;
+    line-height: 14px;
+    padding: 5px 10px;
+    background: #333;
+    color: #fff;
+}
+
+option {
+	height: 40px;
+}
+
+ 

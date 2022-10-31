@@ -1,0 +1,86 @@
+/* a태그 데코레이션 없애기 시작 */
+a:link {
+  color : black;
+  text-decoration: none;
+}
+a:visited {
+  color : black;
+  text-decoration: none;
+}
+a:hover {
+  color : black;
+  text-decoration: none;
+}
+a:active {
+  color : black;
+  text-decoration: none;
+}
+/* a태그 데코레이션 없애기 끝 */
+
+@font-face {
+  src : url("./BMJUA_ttf.ttf"); /*파일 연결 (..은 현재 위치가 css 폴더이기에 상위로 폴더로 가기 위함) */
+  font-family: "baemean" /*위에 파일로 된 폰트는 이름을 jua라고 지정 */
+}
+
+
+h1#logo{
+  font-family: "baemean";
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+/* header */
+div.header{
+  width:100%;
+  position:fixed;
+  z-index:9999;
+  padding:0 40px;
+  opacity: 100;
+}
+
+@media screen and (max-width: 768px){
+  div.header{
+    width: 100%; 
+    height: 52px; 
+    position:fixed;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: white;
+  }
+}
+
+
+
+/* header > header_main */
+ul.hidden_main_list{
+  width:100px;
+  display:flex;
+  position:relative;
+  top:5px;
+  justify-content: flex-end;
+}
+ul.hidden_main_list > li:nth-child(1){
+  margin-right: 25px;
+}
+div.header nav ul{
+  display:flex;
+  justify-content:center;
+}
+div.header nav ul li{
+  margin:0 20px;
+  list-style: none;
+}
+
+h1#project_dream{
+  display: none;
+}
+
+li.mt-2.btn{
+  text-decoration: initial;
+  font-family: HelveticaNeue,NotoSansCJKKR,AppleSDGothicNeo,Helvetica,Malgun Gothic,Dotum,sans-serif;
+}
+
+

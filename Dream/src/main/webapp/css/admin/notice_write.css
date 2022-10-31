@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+div#page_title{
+	height:62.2969px;
+	padding:12px 12px;
+	border-bottom:solid 3px black;
+}
+
+h4.my-auto{
+	margin:0 0 8px 0;
+}
+
+
+iframe{
+  border-right:solid 1px #CED4DA;
+  width:100%;
+}
+

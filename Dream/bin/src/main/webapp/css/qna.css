@@ -1,0 +1,146 @@
+
+
+/* Main 시작 */
+div.Main{
+  width:80%;
+  overflow: hidden;
+  max-width: 1280px;
+  margin:auto;
+}
+/* 사이드바 */
+div.sidebar{
+  width: 300px;
+}
+div#qna{
+  width:1000px;
+}
+
+
+
+table.table{
+  min-width: 400px;
+}
+
+div#qna > table > thead > tr > th{
+  border-top:0;
+  border-bottom:solid 3px black;
+}
+#qna > table > tbody > tr:nth-child(2) > td.title{
+	width:120px;
+}
+
+/* 셀렉트 태그 */
+div#qna > table > tbody > tr > td:nth-child(1) > select{
+  width:100%;
+}
+div#qna > table > thead > tr{
+  width:100%;
+}
+td.selectTag{
+  display:none;
+}
+tr.content{
+  display:none;
+}
+
+button.btn_fillter{
+  background-color: white;
+  font-size: 13px;
+  color:gray; 
+  height:40px;
+  width:72px;
+  padding:0;
+}
+button.btn_fillter.active{
+  background-color: black;
+  color:white;
+}
+
+td.title{
+  font-size:14px;
+  width:68px;
+  padding-left:0;
+}
+
+td.subject{
+  font-size:15px;
+}
+
+td.downIcon{
+  text-align: right;
+  width:32px;
+  background-color: white;
+}
+td.upIcon{
+  display:none;
+  text-align: right;
+  width:32px;
+  background-color: white;
+}
+
+tr.content{
+  font-size:14px;
+  background-color: #FAFAFA;
+  padding: 12px 24px;
+}
+div#content{
+  line-height: 24px;
+}
+
+
+/* 480px ~ 768px 미디어 쿼리*/
+@media (max-width: 768px) {
+  td.selectTag{
+    display:table-cell;
+  }
+  td.button{
+    display:none;
+  }
+  .sidebar {
+    display: none;
+  }
+  div.Main{
+    width:90%;
+  }
+}
+
+
+.my.pagination > .active > a, 
+.my.pagination > .active > span, 
+.my.pagination > .active > a:hover, 
+.my.pagination > .active > span:hover, 
+.my.pagination > .active > a:focus, 
+.my.pagination > .active > span:focus {
+  z-index:0;
+  background: black;
+  border-color:black;
+  color: white;
+}
+button.btn-white{
+	background-color:white;
+}
+
+button.btn-white:hover{
+	background-color: black;
+	color:white;
+}
+
+
+
+
+
+/* 0 ~ 480px 미디어 쿼리*/
+@media (max-width: 480px) {
+  /* 셀렉트태그 */
+  select{
+    font-size: small;
+  }
+  /* 토글버튼 */
+  td.btn_toggle{
+    margin-left: auto;
+    width:20px;
+  }
+  
+}
+
+

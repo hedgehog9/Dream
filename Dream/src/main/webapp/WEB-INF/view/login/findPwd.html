@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title> 비밀번호 찾기</title>
+   
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" type="text/css" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css" > 
+
+   <!-- Font Awesome 5 Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- 직접 만든 CSS -->
+   <link rel="stylesheet" href="../css/login.css">
+   <link rel="stylesheet" href="../css/header.css">
+   <link rel="stylesheet" href="../css/footer.css">
+   <link rel="stylesheet" href="../css/findPwd.css">
+
+   <!-- Optional JavaScript -->
+   <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="../bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js" ></script> 
+
+
+   <!-- JqueryUI JS,CSS -->
+   <link rel="stylesheet" type="text/css" href="jquery-ui-1.13.1.custom\jquery-ui-1.13.1.custom\jquery-ui.min.css" />
+   <script type="text/javascript" src="jquery-ui-1.13.1.custom\jquery-ui-1.13.1.custom\jquery-ui.min.js"></script>
+
+   <script type="text/javascript">
+      $(document).ready(function(){
+
+         $("div.warning").hide();
+
+         let bool = true;
+
+         if(!bool){
+            $("input#mobile").click(function(e){
+               $("input#mobile").css("border-bottom","solid 2px black");
+            });
+            
+            $("input#mobile").blur(function(e){
+               $("input#mobile").css("border-bottom","");
+            });
+         }
+         else{
+
+         // 핸드폰번호 정규표현식 css
+         $("input#mobile").keyup(function(e){
+
+            const mobile = $("input#mobile").val();
+            const regExp = /^[0]{1}[1]{1}[0-1]{1}[0-9]{7,8}$/;
+            const bool_mobile = regExp.test(mobile);
+
+            // console.log($("input#mobile").val().length);
+            // console.log(bool_mobile);
+            bool = bool_mobile;
+
+            if(bool_mobile){
+               $("div#mobile_warning").hide();
+               $("div#div_mobile").removeClass("changeColor_red");
+               $("input#mobile").css("border-bottom","");
+            }else{
+               //  유효성검사 틀렸을때!
+               $("div#mobile_warning").show();
+               $("div#div_mobile").addClass("changeColor_red");
+               $("input#mobile").css("border-bottom","solid 1px #f15746");
+               
+            }
+         });
+      }
+
+      let bool2 = true;
+
+      if(!bool2){
+            $("input#email").click(function(e){
+               $("input#email").css("border-bottom","solid 2px black");
+            });
+            
+            $("input#email").blur(function(e){
+               $("input#email").css("border-bottom","");
+            });
+         }
+         else{
+         // 핸드폰번호 정규표현식 css
+         $("input#email").keyup(function(e){
+
+            const email = $("input#email").val();
+            const regExp2 = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+            const bool_email = regExp2.test(email);
+
+            // console.log($("input#email").val().length);
+            // console.log(bool_email);
+            bool2 = bool_email;
+
+            if(bool_email){
+               $("div#email_warning").hide();
+               $("div#div_email").removeClass("changeColor_red");
+               $("input#email").css("border-bottom","");
+            }else{
+               //  유효성검사 틀렸을때!
+               $("div#email_warning").show();
+               $("div#div_email").addClass("changeColor_red");
+               $("input#email").css("border-bottom","solid 1px #f15746");
+               
+            }
+         });
+      } // end of if~ else 
+
+
+
+      });// end of $(document).ready(function(){}---------------------
+
+   </script>
+
+</head>
+<body>
+   <div id="container">
+
+      <!-- 비밀번호 찾기 제목 -->
+      <div class="find_title">
+         <h2 id="find_pwd_title">비밀번호 찾기</h2>
+      </div>
+      <!-- 비밀번호 찾기 제목 -->
+      
+
+      <!-- 안내 문구 -->
+      <div class="find_notice">
+         <p id="p_notice">
+            가입 시 등록하신 휴대폰 번호와 이메일을 입력하시면,<br>
+            휴대폰으로 임시 비밀번호를 전송해 드립니다.
+         </p>
+      </div>
+      <!-- 안내 문구 -->
+      
+
+      <!-- 아이디 찾기 입력창 -->
+      <div class="find_inputbox">
+         <div class= "input_title" id="div_mobile">휴대폰 번호</div>
+         <input class="input_info" id="mobile" name="mobile" type="text" placeholder="가입하신 휴대폰 번호" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+         <div class="warning" id="mobile_warning">
+            휴대폰 번호를 정확히 입력해주세요.
+         </div>
+         
+         
+         <div class= "input_title" id="div_email">이메일 주소</div>
+         <input class="input_info" id="email" name="email" type="text" placeholder="예) dream@dream.co.kr"/>
+         <div class="warning" id="email_warning">
+            이메일 주소를 정확히 입력해주세요.
+         </div>
+      
+      </div>
+      <!-- 아이디 찾기 입력창 -->
+
+
+      <!-- 이메일 아이디찾기 버튼 부분  -->
+      <div class="find_buttonbox">
+         <a  href="#" class="btn_find">문자 발송하기</a>
+      </div>
+      <!-- 이메일 아이디찾기 버튼 부분  -->
+
+   </div>
+</body>
+</html>

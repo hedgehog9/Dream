@@ -1,0 +1,782 @@
+@charset "UTF-8";
+
+@font-face {
+	src: url("../preview/BMJUA_ttf.ttf");
+	/*파일 연결 (..은 현재 위치가 css 폴더이기에 상위로 폴더로 가기 위함) */
+	font-family: "baemean" /*위에 파일로 된 폰트는 이름을 jua라고 지정 */
+}
+
+h1 { /* html 파일의 h1을 꾸며준다.*/
+	font-family: "baemean";
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+
+
+div#yes_add_area {  /* 주소정보 있을때 출력되는 부분 */  
+	
+}
+
+div#no_pay_area { /* 결제정보 없을시 출력되는 부분 */
+	display: none;
+}
+
+div#yes_pay_area {  /* 결제정보 있을때 출력되는 부분 */  
+	
+}
+
+/* ---------------------------------------------------------- */
+
+
+div.container {
+	    width: 100%;
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+	/* padding-top: 112.5px; */
+}
+
+div.content_area {
+	overflow: hidden;
+	min-height: 380px;
+	width: 90%;
+}
+
+div.my_addressbook {
+	min-height: 315px;
+	margin: 0;
+	padding: 0;
+}
+
+div.content_title {
+	display: flex;
+	padding: 5px 0 6px;
+	justify-content: space-between;
+}
+
+div.content_title2 {
+	display: flex;
+	padding: 5px 0 6px;
+	justify-content: space-between;
+}
+
+div.title>h3 {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+a.btn_add {
+	margin-right: 0;
+	padding: 12px 14px;
+	height: 34px;
+	line-height: 32px;
+	border-radius: 10px;
+	border: 1px solid #222;
+	font-size: 12px;
+	letter-spacing: -.06px;
+	align-items: center;
+	display: flex;
+	text-decoration: none;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: rgba(34, 34, 34, .8);
+	background-color: #fff;
+	max-width: 130px;
+}
+
+span.btn_btn_add2 {
+	margin-right: 0;
+	padding: 12px 14px;
+	height: 34px;
+	line-height: 32px;
+	border-radius: 10px;
+	font-size: 12px;
+	letter-spacing: -.06px;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	color: rgba(34, 34, 34, .8);
+	background-color: #e6e6e6;
+	max-width: 130px;
+}
+
+p.desc {
+	font-size: 13px;
+	letter-spacing: -.07px;
+	color: rgba(34, 34, 34, .5);
+}
+
+div.empty_area {
+	padding: 100px 0 100px;
+	text-align: center;
+}
+
+
+
+/* 버튼 호버시 효과를 없애주는 css 시작 */
+a#add_btn:link {
+	color: black;
+	text-decoration: none;
+	
+}
+
+a#add_btn:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a#add_btn:hover {    /* 주소록 주소추가하기 버튼 호버  */
+	color: white;
+	text-decoration: none;
+	background-color: black;
+}
+
+a#add_btn:active {
+	color: white;
+	text-decoration: none;
+}
+
+
+/* 버튼 호버시 효과를 없애주는 css 끝 */
+
+div.btn_bind > a {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+a.btn_outlinegrey_small:hover {  /* 주소록 버튼들 호버  */
+	color: white;
+	text-decoration: none;
+	background-color: black;
+}
+
+
+a.btn_outlinegrey_small2:hover {   /* 결제정보 버튼들 호버  */
+	color: white;
+	text-decoration: none;
+	background-color: black;
+}
+
+a.btn_add:hover {     /* 결제정보  새 카드 추가하기 호버  */
+	color: white;
+	text-decoration: none;
+	background-color: black;
+}
+
+
+
+
+
+
+div.basic {
+	padding: 15px 0 15px;
+	border-bottom: 2px solid #222;
+}
+
+div.my_item {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	
+	
+}
+
+div.my_item_is_active {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 17px 0 16px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+
+div#other_pay {
+	
+    
+	
+}
+
+div#other_card_info {
+	padding-top: 0px;
+}
+
+
+span#basic_text {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+p#basic_text {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+p.phone {
+	margin: 0;
+}
+
+span.mark {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 14px;
+	margin-top: 0;
+	margin-left: 4px;
+	padding: 3px 6px;
+	font-size: 12px;
+	letter-spacing: -.06px;
+	border-radius: 10px;
+	background-color: #f4f4f4;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top:6px;
+}
+
+div.btn_bind {
+	margin-top: 12px;
+	margin-left: auto;
+}
+
+a.btn_outlinegrey_small {
+	padding-left: 11px;
+	padding-right: 12px;
+	border: 1px solid #d3d3d3;
+	color: rgba(34, 34, 34, .8);
+	font-size: 12px;
+	letter-spacing: -.06px;
+	padding: 0 14px;
+	height: 34px;
+	line-height: 32px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-left: 8px;
+}
+
+div.page_bind {
+	padding: 28px 0;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+}
+
+a.btn_page_active {
+	color: black;
+}
+
+
+#basic_text > a:nth-child(2) {
+	margin: 0 0 0 2px;
+}
+
+
+
+/* ----------------------------------------------- 결제정보 별도 css 시작 ----------------------------------------------*/
+
+
+    div#pay_title {
+           border-bottom: 3px solid #222;
+           padding-bottom: 22px;
+    }
+    
+    #pay_add_btn {
+     width: 100%;
+     min-width: 140px;
+    }
+    
+    
+    div#pay_btn_box {
+      margin-top: 30px;
+    }
+    
+    div.basic > #button {
+      border-bottom: none;
+    }
+    
+    div#button {
+       border-bottom: 1px solid #ebebeb;
+       
+    }
+
+
+    
+   div#no_pay_area {
+	padding: 150px 0 150px;
+	text-align: center;
+	background-color: #e6e6e6;	
+   }
+
+
+	p#desc {
+		font-size: 13px;
+		letter-spacing: -.07px;
+		color: rgba(34, 34, 34, .5);
+	}
+	
+	
+	div.other_list > div.my_item {
+	   padding : 15px 0 15px;
+	}
+	
+
+
+
+p.sub_title {
+	    font-size: 12px;
+    letter-spacing: -.005em;
+    color: rgba(34,34,34,.5);
+	
+}
+
+    div.card_info {
+      display: flex;
+    }
+    span.num_bind {
+      display: flex;
+    }
+    
+    div.card_num {
+      padding-left: 10px;
+    }
+    div.card_info {
+         padding: 13px 0 1px;
+    }
+    
+    a#add_btn {
+      width: 100%;
+    }
+    
+    a.btn_outlinegrey_small2 {
+	padding-left: 11px;
+	padding-right: 12px;
+	border: 1px solid #d3d3d3;
+	color: rgba(34, 34, 34, .8);
+	font-size: 12px;
+	letter-spacing: -.06px;
+	padding: 0 14px;
+	height: 34px;
+	line-height: 32px;
+	border-radius: 10px;
+	display: inline-block;
+	
+}
+
+
+#button > div.btn_bind > a:nth-child(2) {
+	margin: 0 0 0 4px;
+}
+
+div#pay_basic {
+	padding: 25px 0 25px;
+}
+
+div#other_bind > a {
+	margin-bottom: 8px;
+}
+
+span#pay_mark {
+	background-color: #bbb;
+	color:#fff;
+	font-weight: 700;
+}
+
+
+/* ----------------------------------------------- 결제정보 별도 css 끝 ----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*반응형 css 시작  */
+@media screen and (max-width: 768px) { /*  사이드바 css */
+	div.sidebar {
+		display: none;
+	}
+	div.container {
+		padding-top: 67px;
+		width:2000px;
+		max-width: 110%;
+	}
+	ul.header_main_list {
+		display: none;
+	}
+	ul.hidden_main_list {
+		display: flex;
+		justify-content: flex-end;
+		color: gray;
+		font-size: large;
+	}
+	ul.hidden_main_list>li:nth-child(1) {
+		margin-right: 25px;
+	}
+	div.content_title {
+		text-align: center;
+		justify-content: center;
+		display: block;
+	}
+	a.btn_add {
+		width: 100%;
+		max-width: 2000px;
+		padding: 0px;
+		display: block;
+		color: rgba(34, 34, 34, .8);
+		font-size: 16px;
+		border-color: #d3d3d3;
+		height: 50px;
+		line-height: 50px;
+	}
+	div.title > h3 {
+		font-size: 18px;
+	}
+	div.title {
+		height: 40px;
+		align-items: center;
+	}
+	div.my_item {
+		display: block;
+	}
+	
+	div.my_item_is_active {
+		display: block;
+		
+	}
+	a.btn_outlinegrey_small {
+	
+	border: none;
+	color: rgba(34, 34, 34, .8);
+	font-size: 12px;
+	letter-spacing: -.06px;
+	padding: 0 3px;
+	height: 34px;
+	line-height: 32px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+  div.pagination {
+    display: none;
+  }
+  
+  
+  
+  
+   div.content_title {
+           border-bottom: none;
+    }
+    
+    p.sub_title {
+      display: none;
+    }
+    
+    div#button {
+      display: flex;
+     }
+    
+}
+
+
+/* 
+ @media (min-width: 768px) {
+	#myPageFooter {
+		display: none;
+	}
+}    */
+     
+     
+        
+
+
+/* 태블릿화면 이상으로 커지면 p.notice 를 감춰준다  */
+@media screen and (min-width: 769px) {
+	p.notice {
+		display: none;
+	}
+	#myPageFooter{
+		display: none;
+	}
+	
+}
+
+
+@media screen and (max-width: 768px) {
+	#footer{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 모달 css 시작  */
+div.layer_container {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	width: 448px;
+	border-radius: 16px;
+	-webkit-box-shadow: 0 4px 10px 0 rgb(0 0 0/ 10%);
+	box-shadow: 0 4px 10px 0rgba(0, 0, 0, .1);
+	margin: 0;
+}
+
+body>div>div.content_area>div>div.modal_box.layer.lg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(34, 34, 34, .5);
+	margin: 0;
+}
+
+body>div>div.content_area>div>div.modal_box.layer.lg>div>div.layer_header>h2
+	{
+	line-height: 22px;
+	padding: 18px 50px 20px;
+	min-height: 60px;
+	font-size: 18px;
+	letter-spacing: -.27px;
+	font-weight: 700;
+	letter-spacing: -.15px;
+	color: #000;
+	text-align: center;
+	background-color: #fff;
+}
+
+body>div>div.content_area>div>div.modal_box.layer.lg>div>div.layer_content>div.delivery_bind>form.delivery_input>div>h4
+	{
+	font-size: 13px;
+	letter-spacing: -.07px;
+	line-height: 18px;
+	display: block;
+	margin-block-start: 1.33em;
+	margin-block-end: 1.33em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	margin: 0;
+}
+
+body>div>div.content_area>div>div.modal_box.layer.lg>div>div.layer_content>div.delivery_bind>form.delivery_input>div>div>input
+	{
+	outline: 0;
+	border: 0;
+	resize: none;
+	border-radius: 0;
+	-webkit-appearance: none;
+	background-color: rgba(0, 0, 0, 0);
+	width: 100%;
+	width: 100%;
+	font-size: 15px;
+	letter-spacing: -.15px;
+	line-height: 22px;
+	border-bottom: 1px solid #ebebeb;
+	padding: 8px 0;
+}
+
+body>div>div.content_area>div>div.modal_box.layer.lg>div>div.layer_content>div.delivery_bind
+	{
+	padding: 0 32px;
+}
+
+body>div>div.content_area>div>div.modal_box.layer.lg>div>div.layer_content>div.delivery_bind>form.delivery_input>div:nth-child(3)>div>a
+	{
+	position: absolute;
+	right: 0;
+	border: 1px solid #d3d3d3;
+	font-size: 12px;
+	letter-spacing: -.06px;
+	padding: 0 14px;
+	height: 34px;
+	line-height: 32px;
+	border-radius: 10px;
+}
+
+body>div>div.content_area>div>div.modal_box.layer.lg>div>div.layer_content>div.delivery_bind>form.delivery_input>div
+	{
+	padding-top: 16px;
+	position: relative;
+	padding: 10px 0 14px;
+	margin: 0;
+}
+
+div > a > i.material-icons { 
+	position: absolute;
+	top: 18px;
+	right: 20px;
+	color: black;
+}
+
+div.layer_btn{
+	padding-top: 32px;
+	padding: 5px 32px 32px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+/* 모달 취소 버튼 시작  */
+#add_address > div > div.layer_btn > a.btn.btn_delete.outlinegrey.medium
+{
+	width: 120px;
+	border: 1px solid #d3d3d3;
+	color: rgba(34, 34, 34, .8);
+	padding: 0 18px;
+	height: 42px;
+	line-height: 40px;
+	border-radius: 12px;
+	font-size: 14px;
+	letter-spacing: -.14px; 
+}
+/* 모달 취소 버튼 끝  */
+
+/* 모달 저장 버튼 시작  */
+#add_address > div > div.layer_btn > a.btn.btn_save.solid.medium.disabled
+	{
+	width: 120px;
+	border: 1px solid #d3d3d3;
+	color: rgba(34, 34, 34, .8);
+	padding: 0 18px;
+	height: 42px;
+	line-height: 40px;
+	border-radius: 12px;
+	font-size: 14px;
+	letter-spacing: -.14px;
+	margin-left: 8px;
+	background-color: #ebebeb;
+	color: #fff;
+	font-weight: bold;
+}
+
+#add_address > div > div.layer_btn > a.btn.btn_save.solid.medium
+	{
+	width: 120px;
+	border: 1px solid #d3d3d3;
+	color: rgba(34, 34, 34, .8);
+	padding: 0 18px;
+	height: 42px;
+	line-height: 40px;
+	border-radius: 12px;
+	font-size: 14px;
+	letter-spacing: -.14px;
+	margin-left: 8px;
+	background-color: #222;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+
+/* 모달 저장 버튼 끝  */
+body>div>div.content_area>div>div.modal_box.layer.lg>div>div.layer_content>div.delivery_bind>div.delivery_check>div>label>svg
+	{
+	width: 0.1px;
+	height: 24px;
+}
+
+body>div>div.content_area>div>div.modal_box.layer.lg>div>div.layer_content>div.delivery_bind>div.delivery_check>div>label>span
+	{
+	padding-left: 8px;
+	display: inline-block;
+	line-height: 24px;
+	font-size: 13px;
+	letter-spacing: -.07px;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+input[type="checkbox"] {
+	width: 25px; /*Desired width*/
+	height: 25px; /*Desired height*/
+	position: relative;
+	top: 7px;
+}
+
+#add_address > div > button {
+   padding-right: 20px;                 /* 모달 x버튼  */
+   padding-top: 15px;
+}
+
+
+
+/* 체크박스에 체크가 되어지면 체크박스 배경색을 검은색으로 해준다 (기본값: 파란색) */
+:checked {
+	 accent-color: black;
+}
+ 
+ 
+ 
+
+/* 모달 css 끝  */
+
+
+
+
+
+
+
+/* 페이지바 css 시작 */
+
+.my.pagination > .active > a, 
+.my.pagination > .active > span, 
+.my.pagination > .active > a:hover, 
+.my.pagination > .active > span:hover, 
+.my.pagination > .active > a:focus, 
+.my.pagination > .active > span:focus {
+  z-index:0;
+  background: black;
+  border-color:black;
+  color: white;
+}
+
+/* 페이지바 css 끝 */
+
+
+
+
+
+

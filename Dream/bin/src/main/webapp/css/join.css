@@ -1,0 +1,150 @@
+ /* container */
+ 
+div.login_form{
+  width:400px;
+  background-color: #FFFFFF;
+  margin:auto;
+}
+
+@media screen and (max-width: 480px){
+  div.login_form{
+    width:90%;
+    margin:auto;
+  }
+}
+
+h4.titletext{
+  font-weight: bold;
+}
+
+
+/* inputbox */
+input[type='text'],
+input[type='password']
+{
+  height:40px;
+  width:100%;
+}
+
+/* attribute */
+
+span#login_label_ettential{
+  text-indent: -9999px;
+  display:inline-block;
+  vertical-align: top;
+  background-color: #FF0000;
+  overflow:hidden;
+  width:4px;
+  height:4px;
+  margin: 4px;
+}
+
+p.login_error{
+  font-size:small;
+  color:red;
+  display:none;
+}
+
+p#mobile_ok{
+ color:blue;
+}
+
+
+button#btn_join{
+  width:100%;
+  height:50px;
+  background-color:black;
+  color:white;
+  border:none;
+  border-radius: 10px;
+}
+
+input{
+  border:none;
+  border-bottom:solid 1px darkgrey;
+}
+input:focus {
+  outline: none;
+  border-bottom:solid 1px black;
+} 
+input::placeholder{
+  color:darkgray;
+  font-size: small;
+  position:relative;
+  /* top:10px; */
+}
+
+label[for='userid'],
+label[for='passwd'],
+label[for='passwd_check'],
+label[for='mobile'],
+label[for='mobileConfirm']{
+  margin-top: 4%;
+  margin-bottom:0;
+  font-weight: bold;
+  font-size:small;
+}
+div#mobileConfirm{
+	display:flex;
+	flex-direction:column;
+}
+
+
+
+
+/* checkbox */
+div.login_checkbox{
+  font-size: small;
+}
+
+div.login_agreement{
+  line-height: 3vh;
+}
+
+input#agree_age,
+input#agree_message{
+  color: black;
+}
+
+
+
+/* modal */
+span#send_email_guide{
+	font-size:14px;
+}
+
+span#send_guide{
+	font-size:12px;
+}
+
+input#emailConfirmCode{
+	width:150px;
+	display:none;
+}
+button#btn_send_email{
+	width:130px;
+	height:40px;
+}
+
+button.btn.btn-white:hover,
+button#btn_send_email:hover{
+	background-color:black;
+	color:white;
+}
+
+div#mobile > button#btn_mobile_check,
+button#btn_mobile_check_complete{
+	width:80px;
+	height:40px;
+	font-size:small;
+}
+div#mobileConfirm{
+	display:none;	
+}
+
+
+
+
+
+
+

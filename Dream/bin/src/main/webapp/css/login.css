@@ -1,0 +1,159 @@
+label , input{
+   display: block;
+   margin-bottom: 0;
+
+}
+
+input.userinfo{
+   border: none;
+   border-bottom: solid 2px #ebebeb;
+   width: 100%;
+   line-height: 40px;
+   outline:none;
+}
+
+div#container{
+   width: 35%;
+   margin: 0 auto;
+}
+div#container img{
+   width: 200px;
+   margin: 30px auto 30px auto;
+   display:block;
+}
+
+div#div_passwd label{
+   margin-top: 30px;
+}
+
+fieldset > ul {
+   display: flex;
+   list-style: none;
+   text-align: center;
+   margin: 0;
+   margin-bottom: 20px;
+   padding: 0;
+   justify-content: center;
+   height: 20px;
+   
+}
+
+fieldset > ul > li{
+   float: left;
+   font-size: 8pt;
+   margin-bottom: 30px;
+   
+}
+
+fieldset > ul > li:nth-child(2){
+   border-left: solid 1px #ebebeb;
+   border-right: solid 1px #ebebeb;
+   margin: 0 20px;
+   padding: 0 20px;
+}
+
+button.button{
+   width:100%;
+   margin: 30px auto;
+   display:block;
+   height: 50px;
+   border-radius: 10px;
+   border: none;
+   color: white;
+   font-weight: bold;
+}
+button#login{
+   background-color: #ebebeb;
+}
+
+button.social{
+   color: black;
+   font-weight: bold;
+   background-color: white;
+   border: 1px solid #ebebeb;
+   margin: 0;
+   margin-bottom: 5px;
+}
+
+.fa-sharp{
+   color: green;
+   float: left;
+   margin-top: 5px;
+   margin-left: 10px;
+}
+.fa-k{
+   color: #e0c302;
+   float: left;
+   margin-top: 12px;
+   margin-left: 10px;
+}
+a.login_a{
+   color: black;
+   text-decoration: none;
+}
+a.login_a:hover{
+   color: black;
+   text-decoration: none;
+}
+
+span.warning{
+	color: #f15746;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+
+
+.changeColor_red{
+   color: #f15746;
+}
+.borderBottom_red{
+   border-bottom: solid 1px #f15746;
+}
+
+
+
+@media screen and (max-width: 480px){
+   div#container{
+      width: 90%;
+   }
+}
+
+
+
+@media screen and (min-width: 480px){
+   div#container{
+      width: 400px;
+   }
+}
+
+input:focus{
+   border-bottom:solid 2px black;
+}
+
+
+/* input 태그 focus 시 placeholder 숨기기 */
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { /* WebKit browsers */
+  color:transparent;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:transparent;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:transparent;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:transparent;
+}
+
+
+
+
+

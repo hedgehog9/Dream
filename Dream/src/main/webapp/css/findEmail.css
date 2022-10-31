@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+div#container{
+   width: 400px;
+   margin: 0 auto;
+   margin-top: 60px;
+}
+/* 잠깐 보였다 사라지는 경고창  */
+div#notfound_notice{
+   margin: 0 auto;
+   text-align: center;
+   width: 500px;
+   height: 50px;
+   border-radius: 100px;
+   z-index: 2;
+   background-color: rgba(0, 0, 0, 0.584);
+   color: white;
+   opacity: 50%;
+   
+   position: relative;
+   top: -50px;
+
+   transition: transform 0.3s ease-in-out;
+}
+
+div#notfound_notice.show {
+   transform: translateY(50px);
+}
+
+i.fa-triangle-exclamation{
+   position: relative;
+   left: -50px;
+}
+
+
+div#notfound_notice > p {
+   padding-top: 12px;
+
+}
+
+
+div.find_notice{
+   padding: 40px 0 10px 0;
+}
+
+div.find_inputbox{
+   padding: 10px 0px 14px;
+}
+
+div.find_buttonbox{
+   padding-top: 44px;
+}
+
+/* 휴대폰번호 문구 css */
+div#div_mobile{
+   font-size: 13px;
+   font-weight: 700;
+}
+
+p#p_notice{
+   font-size: 14px;
+   letter-spacing: -0.21px;
+}
+
+
+/* 이메일 아이디 찾기 버튼 */
+a.btn_find{
+   display: inline-block;
+   height: 52px;
+   width: 100%;
+   background-color: #ebebeb;
+   color: white;
+   font-size: 16px;
+   font-weight: 600;
+   padding: 14px;
+   border-radius: 10px;
+   text-align: center;
+}
+
+
+a#btn_find{
+    text-decoration: none;
+    color:white;
+}
+
+a#btn_find:link {
+    text-decoration: none;
+    color:white;
+}/*방문 전 링크 상태 */
+
+a#btn_find:visited {
+    text-decoration: none;
+    color:white;
+}/* 방문 후 링크 상태 */
+
+a#btn_find:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color:white;
+} /* 마우스 오버했을 때 링크 상태 */
+
+a#btn_find:active {
+    text-decoration: none;
+    color:white;
+} /* 클릭했을 때 링크 상태 */
+
+
+
+
+
+
+h2#find_email_title{
+   font-size: 32px;
+   font-weight: 700;
+   letter-spacing: -0.48px;
+   word-spacing: 0px;
+   border-bottom: solid 2px black;
+   text-align: center;
+   padding-bottom: 40px;
+}
+
+/* 휴대폰번호 입력 input 박스 css */
+input#mobile{
+   border: none;
+   outline: none;
+   border-bottom: solid 1px #ebebeb;
+   width: 100%;
+   padding: 8px 0px;
+   font-size: 15px;
+   line-height: 22px;
+   letter-spacing: -0.15px;
+   word-spacing: 0px;
+}
+
+
+@media screen and (max-width: 480px){
+   div#container{
+      width: 100%;
+   }
+}

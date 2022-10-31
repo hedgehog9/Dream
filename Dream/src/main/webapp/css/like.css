@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+div#container{
+  width:80%;
+  margin:auto;
+}
+div#menu_title{
+  height:200px;
+}
+h2#menu_title{
+  font-weight:bold;
+  position:relative;
+  top:80px;
+}
+
+
+div.product_imgbox > img{
+  width:100%;
+  height:100%;
+}
+div.product_imgbox{
+  overflow:hidden;
+  border: solid 1px #DEE2E6;
+  border-radius:20px;
+  height:70%;
+}
+div#product_division{
+  font-size:12px;
+  color:lightgray;
+}
+div#product_detail_division{
+  font-size:13px;
+  text-decoration: underline;
+}
+div#product_name{
+  font-size:15px;
+}
+div#product_name{
+    font-size:14px;
+  }
+@media screen and (max-width: 768px){
+  div#product_name{
+    font-size:14px;
+  }
+}
+div#product_price,
+div#product_sale_price{
+  font-size:17px;
+  font-weight:bold;
+}
+@media screen and (max-width: 768px){
+  div#product_price,
+  div#product_sale_price{
+    font-size:16px;
+    font-size:16px;
+  }
+}
+
+
+/* a태그 데코레이션 없애기 시작 */
+a.product:link {
+  color : black;
+  text-decoration: none;
+}
+a.product:visited {
+  color : black;
+  text-decoration: none;
+}
+a.product:hover {
+  color : black;
+  text-decoration: none;
+}
+a.product:active {
+  color : black;
+  text-decoration: none;
+}
+/* a태그 데코레이션 없애기 끝 */
+
+
+div.item:hover{
+  border-radius:20px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+span#discount_percent{
+  color:red;
+  font-size:12px;
+}
+span#product_price_discount{
+   color:darkgray;
+   font-size:14px;
+}
+
+/* 페이지바 */
+.my.pagination > li > a,
+.my.pagination > li > span{
+  color:black;
+}
+.my.pagination > .active > a, 
+.my.pagination > .active > span, 
+.my.pagination > .active > a:hover, 
+.my.pagination > .active > span:hover, 
+.my.pagination > .active > a:focus, 
+.my.pagination > .active > span:focus {
+  z-index:0;
+  background: black;
+  border-color:black;
+  color: white;
+}
+
+
+
+i.fa-heart{
+  position:relative;
+  top:5px;
+}
+#btn_like{
+  width:35px;
+  height:35px;
+  background-color:white;
+  position:absolute;
+  top:1%;
+  right:3%;
+  background-color:white;
+  top:2%;
+  left:78%;
+}
+#btn_like:hover{
+  color:pink;
+}
+
+
+#sale_mark{
+   width:20%;
+   height:10%;
+   background-color:red;
+   color:white;
+   position:absolute;
+   top:2%;
+   right:73%;
+   font-weight:bold;
+   font-size:1em;
+   border:none;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+@media screen and (min-width: 1000px){
+  #sale_mark{
+   font-size:x-small;
+  }
+}
+@media screen and (min-width: 1150px){
+  #sale_mark{
+    font-size:1em;
+  }
+}

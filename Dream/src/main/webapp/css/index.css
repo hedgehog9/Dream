@@ -1,0 +1,252 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+/* a태그 데코레이션 없애기 시작 */
+a.product:link {
+  color : black;
+  text-decoration: none;
+}
+a.product:visited {
+  color : black;
+  text-decoration: none;
+}
+a.product:hover {
+  color : black;
+  text-decoration: none;
+}
+a.product:active {
+  color : black;
+  text-decoration: none;
+}
+/* a태그 데코레이션 없애기 끝 */
+
+
+
+/* Main */
+
+div#carousel > div.carousel-inner > div.carousel-item > img{
+  height: 70vh;
+  z-index:1;
+  object-fit:cover;
+}
+
+@media screen and (max-width: 768px){
+  div#carousel > div.carousel-inner > div.carousel-item > img{
+    height: 45vh;
+    object-fit:cover;
+  }
+}
+
+@media screen and (max-width: 480px){
+  div#carousel > div.carousel-inner > div.carousel-item > img{
+    height: 40vh;
+    object-fit:cover;
+  }
+}
+
+div.content{
+  width:80%;
+  margin:auto;
+}
+
+@media screen and (max-width: 768px){
+  div.content{
+    width:95%;
+  }
+}
+
+div.content > div.shortcut > div.shortcut_item{
+  display:flex; 
+  flex-direction:column;
+  justify-content: space-between;
+  width:18%;
+  height:22vh;
+  min-height: 120px;
+  cursor:pointer;
+  user-select:none;
+}
+
+
+div.content > div.shortcut> div.shortcut_item > p.text-center{
+	font-size:medium;
+	position:relative;
+    top:5%;
+}
+div.content > div.shortcut > div.shortcut_item > div.shortcut_img{
+  height:80%;
+}
+div.content > div.shortcut> div.shortcut_item > div.shortcut_img > img{
+  user-select:none;
+  width:100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+  div.content > div.shortcut> div.shortcut_item > div.shortcut_img > img{
+    border-radius: 50%;
+    overflow: hidden;
+    position:absolute;
+  }
+  div.content > div.shortcut> div.shortcut_item{
+    height:100px;
+    margin-bottom:8%;
+    width:18%;
+  }
+  div.content > div.shortcut> div.shortcut_item > div.shortcut_img{
+    position:relative;
+    padding-bottom: 100%;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  div.content > div.shortcut> div.shortcut_item{
+    height:90px;
+    margin-bottom:2%;
+    width:19%;
+  }
+}
+@media screen and (max-width: 550px){
+  div.content > div.shortcut> div.shortcut_item > p.text-center{
+    font-size:x-small;
+  }
+}
+
+@media screen and (max-width: 480px){
+  div.content > div.shortcut> div.shortcut_item{
+    height:40px;
+    width:19%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+div.productList{
+  /* z-index:0; */
+  width:100%;
+}
+@media screen and (min-width: 768px){
+  div.productList{
+    padding-top:16px;
+  }
+}
+@media screen and (max-width: 768px){
+  div.productList{
+    padding-top:36px;
+  }
+}
+@media screen and (max-width: 480px){
+  div.productList{
+    padding-top:16px;
+  }
+}
+
+
+p#Released_product{
+  font-size: x-small;
+  color: #22222280;
+}
+
+div.product_imgbox > img{
+  width:100%;
+  height:100%;
+}
+div.product_imgbox{
+  overflow:hidden;
+  border: solid 1px #DEE2E6;
+  border-radius:20px;
+  height:70%;
+}
+div#product_division{
+  font-size:12px;
+  color:lightgray;
+}
+div#product_detail_division{
+  font-size:13px;
+  text-decoration: underline;
+}
+div#product_name{
+  font-size:15px;
+}
+div#product_name{
+    font-size:14px;
+  }
+@media screen and (max-width: 768px){
+  div#product_name{
+    font-size:14px;
+  }
+}
+div#product_price,
+div#product_sale_price{
+  font-size:17px;
+  font-weight:bold;
+}
+@media screen and (max-width: 768px){
+  div#product_price,
+  div#product_sale_price{
+    font-size:16px;
+    font-size:16px;
+  }
+}
+#sale_mark{
+   width:50px;
+   height:28px;
+   background-color:red;
+   color:white;
+   position:absolute;
+   top:2%;
+   right:73%;
+   font-weight:bold;
+   border:none;
+}
+div.item:hover{
+  border-radius:20px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+span#discount_percent{
+  color:red;
+  font-size:12px;
+}
+span#product_price_discount{
+   color:darkgray;
+   font-size:14px;
+}
+
+
+
+
+/* 더보기버튼 */
+div#more_btn{
+  width:100%;
+  text-align: center;
+}
+button#more_btn:hover{
+  background-color: black;
+  color:white;
+}
+
+button#more_btn{
+  background-color:white;
+  width:100px;
+  height:42px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* main 끝 */
+
+
+
+
+
+

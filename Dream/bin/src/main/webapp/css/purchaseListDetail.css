@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* 뒤로가기 버튼, 구매내역 글자, 메뉴 더보기 버튼 css */
+div#detail_title {
+	display: flex;
+	justify-content: start;
+	border-bottom: solid 2px black;
+	margin-bottom: 20px;
+	padding: 0 0 10px 0;
+}
+
+/* 제품 이미지 css */
+img.product_img {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+}
+/* 제목 밑에 오는 제품 css */
+div#product_info {
+	display: flex;
+	justify-content: flex-start;
+}
+/* 진행 상황 표시 div css 시작*/
+div#progress{
+	height: 115px;
+	background-color: #FEF7F6;
+}
+
+div#progressDetail {
+	display: flex;
+	width: 100%;
+}
+
+div#progressDetail div {
+	width: 33%;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+/* 진행상황 막대 표시 */
+div#shipping_ready {
+	border-top: solid 3px black;
+}
+
+div#shipping_now {
+	border-top: solid 3px black;
+}
+
+div#shipping_end {
+	border-top: solid 3px #ebebeb;
+}
+
+div#progress_title {
+	font-size: 14px;
+	padding: 20px 0px 0px 20px;
+	margin: 10px 0;
+}
+
+/* 총 정산금액 - 금액 표시 부분 css */
+div#div_price {
+	color: #f15746;
+	text-align: right;
+	width: 100%;
+	
+	font-size: 22px;
+	letter-spacing : -0.7px;
+    line-height: 28px;
+    vertical-align: top;
+    font-weight: bold;
+}
+div#price_title{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+div#price {
+	margin-top: 20px;
+	
+	/* border: solid 1px red;*/
+}
+/* 진행 상황 표시 div css 끝*/
+div#price_detail, table#table_detail {
+	margin-top: 10px;
+	width: 100%;
+}
+
+div#price_detail {
+	border-bottom: solid 2px black;
+}
+
+td.td_title {
+	font-size: 13px;
+	width: 100px;
+    padding-top:10px;
+    padding-bottom:16px;
+    border-bottom: solid 1px #ededed;
+}
+/* 판매가격 금액 글자 bold */
+td#td_bold{
+	font-weight: 700;
+}
+/* 주소 title css */
+td#td_address{
+	vertical-align : top;
+}
+
+
+td.td_content {
+	text-align: right;
+	font-size: 14px;
+    padding-top:10px;
+    padding-bottom:16px;
+    border-bottom: solid 1px #ededed;
+}
+
+/* 거래일시 제목,시간표시 css */
+div#purchase_date {
+	display: flex;
+	justify-content: space-between;
+}
+
+span.buyer_title {
+	display: inline-block;
+	width: 100px;
+}
+/* 상품 상세보기 버튼 css */
+button#product_detail {
+	display: block;
+	height: 42px;
+	border-radius: 10px;
+	border: solid 1px #ebebeb;
+	background-color: white;
+	margin: 10px 0;
+	width: 100%;
+	font-size:12px;
+}
+/* 상품명 css*/
+div#div_product_name , div#div_purchase_cnt{
+	font-size:14px;
+	color:#222222;
+}
+
+
+
+
+/* 내용물 들어오는 div css */
+div#purchaseDetailcontent{
+	margin: 0 auto;
+}
+
+div.shipping{
+	margin-left:1px;
+	margin-right:1px;
+    line-height: 17px;
+    font-size: 14px;
+}
+
+div#div_shipping{
+	margin:0 auto;
+	font-size:18px;
+    letter-spacing: -.27px;
+    font-weight: 700;
+}
+
+/* 주문자 정보 글자 왼쪽 정렬 */
+
+
+/* 뒤로가기 버튼 */
+i.fa-arrow-left{
+	
+}
+
+
+@media screen and (min-width: 768px){
+  div#purchaseDetailcontent{
+    width: 100%; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+	td.order_info {
+		text-align: start;
+	}
+}
